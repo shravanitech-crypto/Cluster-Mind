@@ -1,0 +1,1 @@
+{"name":"clustermind","private":true,"version":"1.0.0","scripts":{"dev:frontend":"cd frontend && npm run dev","dev:backend":"cd backend && npm run dev","dev:ml":"uvicorn --app-dir ai-ml main:app --reload --port 8000","build":"cd frontend && npm run build","seed":"cd backend && npm run seed"},"workspaces":["frontend","backend"]}

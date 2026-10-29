@@ -1,0 +1,28 @@
+.offers-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 18px;
+  padding: 4px 0 10px;
+}
+
+.offers-grid > * {
+  flex: 1 1 240px;
+  max-width: 340px;
+  min-width: 0;
+}
+
+@media (max-width: 1200px) {
+  .offers-grid > * {
+    flex: 1 1 260px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .offers-grid > * {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}

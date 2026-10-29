@@ -1,0 +1,29 @@
+.delivery-card{
+
+background:white;
+
+padding:25px;
+
+border-radius:18px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+margin-top:20px;
+
+}
+
+.delivery-card h2{
+
+margin-bottom:20px;
+
+font-family:Poppins;
+
+}
+
+.delivery-card span{
+
+color:#6B7280;
+
+font-size:14px;
+
+}

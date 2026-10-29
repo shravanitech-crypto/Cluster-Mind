@@ -1,0 +1,21 @@
+{
+  "name": "@clustermind/backend",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch index.js",
+    "start": "node index.js",
+    "seed": "node seed.js",
+    "sync:dataset": "node -e \"import('node:fs').then(fs=>{fs.mkdirSync('data/ml',{recursive:true});fs.copyFileSync('../ai-ml/data/dataset.csv','data/ml/dataset.csv');try{fs.copyFileSync('../ai-ml/data/dataset_meta.json','data/ml/dataset_meta.json')}catch{};console.log('Synced ai-ml/data -> backend/data/ml')})\""
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^8.8.4",
+    "razorpay": "^2.9.8"
+  }
+}

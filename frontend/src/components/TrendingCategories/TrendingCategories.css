@@ -1,0 +1,39 @@
+.category-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 22px;
+  padding: 4px 0 10px;
+}
+
+.category-grid > * {
+  flex: 1 1 220px;
+  max-width: 320px;
+  min-width: 0;
+}
+
+@media (max-width: 1200px) {
+  .category-grid > * {
+    flex: 1 1 240px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .category-grid > * {
+    flex: 1 1 260px;
+    max-width: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .category-grid {
+    gap: 14px;
+  }
+
+  .category-grid > * {
+    flex: 1 1 100%;
+    max-width: none;
+  }
+}
